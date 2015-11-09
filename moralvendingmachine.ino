@@ -232,6 +232,7 @@ unsigned long question1() {
     tft.println("");    
     tft.println("Prompt 1");
     tft.println("I am interested in 3D     printing's capacity to    circumvent geographic     boundaries.");
+    // I am interested in circumventing geographic boundaries
     tft.println("");
     tft.println("Press Green for Yes");
     tft.setTextColor(ILI9341_RED); 
@@ -256,6 +257,7 @@ unsigned long question1() {
     tft.println("");        
     tft.println("Prompt 2");
     tft.println("I am interested in how 3D printing unsettles notions of expertise in manufacturing.");
+    // I am interested in unsettling notions of expertise 
     tft.println("");
     tft.println("Press Green for Yes");
     tft.setTextColor(ILI9341_RED); 
@@ -280,6 +282,7 @@ unsigned long question1() {
     tft.println("");  
     tft.println("Prompt 3");
     tft.println("I am interested in how new knowledge practices and epistemic cultures form around 3D printing.");
+    // I am interested in new knowledge practices and epistemic cultures
     tft.println("");
     tft.println("Press Green for Yes");
     tft.setTextColor(ILI9341_RED); 
@@ -304,6 +307,7 @@ unsigned long question1() {
     tft.println("");  
     tft.println("Prompt 4");
     tft.println("I am interested in the capacity of 3D printing to produce customizable goods.");
+    // I am interested in producing customizable goods
     tft.println("");
     tft.println("Press Green for Yes");
     tft.setTextColor(ILI9341_RED); 
@@ -328,6 +332,7 @@ unsigned long question1() {
     tft.println("");  
     tft.println("Prompt 5");
     tft.println("I am interested in 3D printing's potential to disrupt/disturb institutional or legal authority.");
+    // I am interested in disrupting institutional or legal authority
     tft.println("");
     tft.println("Press Green for Yes");
     tft.setTextColor(ILI9341_RED); 
