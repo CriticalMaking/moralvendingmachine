@@ -20,7 +20,13 @@ bool questionone = 1;
 bool questiontwo = 1; 
 bool questionthree = 1;
 bool questionfour = 1;
-bool questionfive = 1; 
+bool questionfive = 1;
+// bool questionsix = 1;
+// bool questionseven = 1;
+// bool questioneight = 1;
+// bool questionnine = 1;
+// bool questionten = 1;
+
 
 // For the Adafruit shield, these are the default.
 #define TFT_DC 9
@@ -45,6 +51,8 @@ void setup() {
     
 void loop() {
 
+  // update if adding more questions...
+
 switch (question) {
     case 0: 
       instructions(); 
@@ -68,7 +76,7 @@ switch (question) {
       break;
     case 5:  
       question5();
-      break;
+      break;  
     case 6:    
       vending();
       question = 0;
@@ -156,7 +164,7 @@ void getBall(bool turn){
     if (turn) {  
     Serial.println("turning right");   
   myservo.attach(3);
-  myservo.write(180); //92 to advance the servo past the hall sensor
+  myservo.write(180); // 92 to advance the servo past the hall sensor
   delay(300);
   while (analogRead(analogInPin) <=360) {
     //Serial.println(analogRead(analogInPin)); 
@@ -194,8 +202,9 @@ void getBall(bool turn){
     tft.println("");    
     tft.println("");
     tft.println("");    
-    tft.println("");    
-    tft.println("I am a Blackbox Vending Machine");
+    tft.println(""); 
+ // hello, friend!   
+    tft.println("I am a Blackbox  Vending Machine");
     return micros() - start;
 }
 
@@ -210,12 +219,16 @@ void getBall(bool turn){
     tft.println("");    
     tft.println("");
     tft.println("");
-    tft.println("");    
-    tft.println("Would you like to make a moral technology?"); 
+    tft.println(""); 
     tft.println("");
-    tft.println("Press green button to begin!"); 
+    tft.println("");     
+    tft.println("Would you like to make a  moral technology?"); 
+    tft.println("");
+    tft.println("Press green button to     begin!"); 
     return micros() - start;
  } 
+
+// add rationale under each of these for the yes or no answer
 
 unsigned long question1() {
     if (questionone) {
@@ -341,6 +354,8 @@ unsigned long question1() {
    }
     //return micros() - start;
  }
+ 
+ // questions like "i have the moral authority to question emergent technologies"
 
  unsigned long vending() {
     tft.fillScreen(ILI9341_BLACK);
@@ -355,6 +370,7 @@ unsigned long question1() {
     tft.println("");
     tft.println(""); 
     tft.println("vending");
+    // do you trust me to produce the right object?
     
     if (score>0) {
     Serial.println("vending leg");   
